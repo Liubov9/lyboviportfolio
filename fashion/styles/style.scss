@@ -1,0 +1,118 @@
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+@import "fashion-header";
+@import "fashion-home";
+@import "fashion-media";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #2d2b27;
+}
+
+.container{
+  max-width: 1212px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 21px 0 21px;
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-border-radius .3s,-webkit-box-shadow .3s;
+}
+.container-header{
+  max-width: 1790px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.container-second{
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+.button{
+  display: inline-block;
+  background-color: #171717;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.05em;
+
+  &:hover{
+    background-color: #ededed;
+    color: #030303;
+  }
+}
+
+.look__new{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  p{
+    font-size: 11px;
+    color: #fff !important;
+    background-color: #1a1a1a;
+    text-transform: uppercase;
+    line-height: 36px;
+    padding: 0 15px 0 10px;
+  }
+}
+.look__menu{
+  width: 80%;
+  margin: 80px auto 60px;
+  ul{
+    display: flex;
+    justify-content: center;
+    li{
+
+      margin: 0 50px 0 0;
+      font-weight: 600;
+      font-size: 19px;
+      line-height: 14.5px;
+      a{
+        color: #2d2b27;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.feature__icon{
+  display: inline-table;
+  border-radius: 50%;
+  border: 2px solid #dedede;
+  padding: 10px 15px;
+  align-self: center;
+
+  i{
+    color: #dedede;
+    font-size: 20px;
+  }
+  &:hover{
+    cursor: pointer;
+    border: 2px solid #171717;
+    i{
+      color: #171717;
+    }
+  }
+}
